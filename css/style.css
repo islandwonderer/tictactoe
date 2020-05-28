@@ -14,11 +14,8 @@ h3 {
   color: #66fcf1;
   text-align: center;
 }
-h3 {
-}
-#cpu {
-}
-#player {
+#toprow .box {
+  background: #1f2833;
 }
 .grid {
   margin: 0 auto;
@@ -55,9 +52,11 @@ h3 {
   align-items: center;
   justify-content: center;
 }
+#bottomrow .box {
+  background: #1f2833;
+}
 
-
-@media only screen and (max-width: 500px) {
+/* @media only screen and (max-width: 500px) {
   h1 {
     font-size: 4rem;
   }
@@ -67,13 +66,13 @@ h3 {
 }
 
 
-}
+} */
 /* Tablet */
-@media (min-width: 501px) {
+/* @media (min-width: 501px) {
   h1 {
     font-size: 8rem;
   }
   h2 {
     font-size: 6rem;
   }
-}
+} */

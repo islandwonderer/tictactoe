@@ -24,48 +24,55 @@
     <!-- START HERE -->
     <header>
       <div class="container">
-        <h1>Title Here</h1>
+        <h1 class="display-1">Title Here</h1>
       </div>
     </header>
-    <!-- start buttons -->
-    <div class="container">
-      <div class="row">
-        <div class="col-3"></div>
-        <div class="col-2 ml-0 pl-0">
-          <h3>Start</h3>
-        </div>
-        <div class="col-2 mx-1">
-          <button id="player" class="btn btn-md" type="submit">Player</button>
-        </div>
-        <div class="col-2 mx-1">
-          <button id="cpu" class="btn btn-md" type="submit">CPU</button>
-        </div>
-        <div class="col-3"></div>
-      </div>
-    </div>
+
     <!-- tic tac toe grid -->
     <div class="grid mb-0 mt-3">
+      <div class="row mx-4" id="toprow">
+        <div class="box">
+          <div class="inner"><h3>Start</h3></div>
+        </div>
+        <div class="box">
+          <div class="inner">
+            <button id="player" class="btn btn-md" type="submit">Player</button>
+          </div>
+        </div>
+        <div class="box">
+          <div class="inner">
+            <button id="cpu" class="btn btn-md" type="submit">CPU</button>
+          </div>
+        </div>
+      </div>
       <div class="row mx-4">
         <div class="box"><div class="inner" id="x1y1"></div></div>
-        <div class="box"><div class="inner" id="x2y1">2</div></div>
-        <div class="box"><div class="inner" id="x3y1">3</div></div>
+        <div class="box"><div class="inner" id="x2y1"></div></div>
+        <div class="box"><div class="inner" id="x3y1"></div></div>
       </div>
       <div class="row mx-4">
-        <div class="box"><div class="inner" id="x1y2">1</div></div>
-        <div class="box"><div class="inner" id="x2y2">2</div></div>
-        <div class="box"><div class="inner" id="x3y2">3</div></div>
+        <div class="box"><div class="inner" id="x1y2"></div></div>
+        <div class="box"><div class="inner" id="x2y2"></div></div>
+        <div class="box"><div class="inner" id="x3y2"></div></div>
       </div>
       <div class="row mx-4">
-        <div class="box"><div class="inner" id="x1y3">1</div></div>
-        <div class="box"><div class="inner" id="x2y3">2</div></div>
-        <div class="box"><div class="inner" id="x3y3">3</div></div>
+        <div class="box"><div class="inner" id="x1y3"></div></div>
+        <div class="box"><div class="inner" id="x2y3"></div></div>
+        <div class="box"><div class="inner" id="x3y3"></div></div>
+      </div>
+      <div class="row mx-4" id="bottomrow">
+        <div class="box" id="outer">
+          <div class="inner align-items-start pt-4">
+            <h2 class="display-1">You Win!</h2>
+          </div>
+        </div>
       </div>
     </div>
 
     <!-- healine bar -->
-    <div class="container">
+    <!-- <div class="container">
       <h2 class="display-2 mt-0 pt-0">YOU WON!</h2>
-    </div>
+    </div> -->
 
     <script
       src="http://code.jquery.com/jquery-3.3.1.min.js"
